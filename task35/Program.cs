@@ -15,8 +15,10 @@ for (int i = 0; i < array.Length; i++)
 Console.WriteLine('[' + string.Join(", ", array) + ']');
 for (int j = 0; j < array.Length; j++)
 {
-    if(array[j] >= 10 & array[j] <= 99) count = count + 1;
+    if(array[j] >= 10 & array[j] <= 99) 
+    {
+        count = count + 1;
+    }
 }
 
-Console.Write("Количество элементов массива, значения которых лежат в отрезке [10,99], = ");
-Console.Write(count);
+Console.Write($"Количество элементов массива, значения которых лежат в отрезке [10,99], = {count}");
