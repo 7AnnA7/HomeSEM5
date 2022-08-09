@@ -13,7 +13,7 @@ for (int i = 0; i < array.Length; i++)
 
 Console.WriteLine('[' + string.Join(", ", array) + ']');
 
-for (int j = 0; j < array.Length; j++)
+for (int j = 1; j < array.Length; j=j+2)
 {
     if (j % 2 == 1)
     {
